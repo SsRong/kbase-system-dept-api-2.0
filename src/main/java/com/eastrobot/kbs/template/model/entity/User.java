@@ -39,9 +39,9 @@ public class User extends BaseEntity {
     private String userInfoId;
 
     // @TableLogic
-    // @ApiModelProperty(value = "-1:删除0:正常")
-    // @TableField("STATUS")
-    // private Integer status;
+    //    // @ApiModelProperty(value = "-1:删除0:正常")
+    //    // @TableField("STATUS")
+    //    // private Integer status;
 
     @Column(name = "MAIN_STATION_ID")
     private String mainStationId;

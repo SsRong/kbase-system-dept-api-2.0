@@ -90,3 +90,4 @@ public class BaseEntity implements Serializable {
         return HashCodeBuilder.reflectionHashCode(this, true);
     }
 }
+

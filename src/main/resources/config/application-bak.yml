@@ -30,7 +30,7 @@ spring:
     password: philips
     name: hikari
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://172.16.1.119:3306/philips
+    url: jdbc:mysql://172.16.35.29:3306/kbase-template
     hikari:
       connection-timeout: 1800000
       auto-commit: true
@@ -39,6 +39,10 @@ spring:
       maximum-pool-size: 10
       idle-timeout: 600000
       connection-init-sql: select 1 from dual
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
 # mybatis 相关配置
 mybatis-plus:
   mapper-locations: classpath:config/mybatis/mapper/**/*.xml

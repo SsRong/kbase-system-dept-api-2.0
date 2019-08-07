@@ -29,6 +29,7 @@ public class BaseVO implements Serializable {
 
 
     public interface Create {
+
     }
 
     public interface Update {

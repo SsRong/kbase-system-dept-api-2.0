@@ -1,6 +1,7 @@
 package com.eastrobot.kbs.template.model.vo;
 
 import io.swagger.annotations.ApiModelProperty;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
@@ -12,7 +13,10 @@ import javax.validation.constraints.NotEmpty;
 @Getter
 @Setter
 @Builder
+@AllArgsConstructor
 public class UserVO extends BaseVO {
+
+    public UserVO() {}
 
     @NotEmpty(groups = Create.class)
     @ApiModelProperty("用户名")

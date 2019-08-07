@@ -1,8 +1,10 @@
 package com.eastrobot.kbs.template.model;
 
 import com.eastrobot.kbs.template.model.entity.Biztpl;
+import com.eastrobot.kbs.template.model.entity.Dept;
 import com.eastrobot.kbs.template.model.entity.User;
 import com.eastrobot.kbs.template.model.vo.BiztplVO;
+import com.eastrobot.kbs.template.model.vo.DeptVO;
 import com.eastrobot.kbs.template.model.vo.UserVO;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
@@ -19,6 +21,13 @@ public interface BeanConverter {
 
     @Mappings({})
     UserVO toVO(User user);
+
+    @Mappings({
+    })
+    Dept fromVO(DeptVO vo);
+
+    @Mappings({})
+    DeptVO toVO(Dept user);
 
     @Mappings(
             {@Mapping(source = "cateId", target = "cateId")}
